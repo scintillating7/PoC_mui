@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env", 
+      {
+        "targets": "> 0.25%, not dead"
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "dev-expression",
+    "transform-class-properties",
+    "@babel/plugin-transform-runtime",
+    ["@babel/plugin-proposal-object-rest-spread", { "loose": true, "useBuiltIns": true }]
+  ]
+}
