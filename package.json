@@ -1,5 +1,5 @@
 {
-  "name": "gdc_portal_poc_antd",
+  "name": "gdc_portal_poc_mui",
   "version": "0.1.0",
   "description": "GDC Portal",
   "main": "index.js",
@@ -9,8 +9,11 @@
     "fontsource-roboto": "^2.1.3",
     "node-fetch": "^1.7.3",
     "npm": "^6.1.0",
+    "prop-types": "^15.7.2",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-router-dom": "^5.2.0",
+    "react-svg-loader": "^3.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",

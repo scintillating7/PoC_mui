@@ -1,3 +1,24 @@
-.App {
-  padding: 20px;
+.logo {
+  width: 300px;
+  height: 100%;
+  margin: auto 28px auto 0;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.header {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+.top-container {
+  border-bottom: 1px solid grey;
+  height: 100%;
+  min-height: 10vh;
 }
