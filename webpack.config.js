@@ -6,7 +6,7 @@ const basename = process.env.BASENAME || '/';
 const pathPrefix = basename.endsWith('/') ? basename.slice(0, basename.length - 1) : basename;
 
 const plugins = [
-  new webpack.EnvironmentPlugin(['NODE_ENV']),
+  new webpack.EnvironmentPlugin({ NODE_ENV: 'dev' }),
   new webpack.EnvironmentPlugin({ MOCK_STORE: null }),
   new webpack.EnvironmentPlugin({ BASENAME: '/' }),
   new webpack.DefinePlugin({ // <-- key to reducing React's size
@@ -46,14 +46,12 @@ module.exports = {
   output: {
     path: __dirname,
     filename: 'bundle.js',
-    publicPath: basename,
+    publicPath: basename
   },
   optimization,
   devtool,
   devServer: {
-    historyApiFallback: {
-      index: 'dev.html',
-    },
+    historyApiFallback: true,
     disableHostCheck: true,
     compress: true,
     hot: true,
