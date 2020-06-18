@@ -7,16 +7,17 @@ import { Container } from '@material-ui/core';
 import './index.css';
 
 import Album from './Album';
-import NotFound from './NotFound';
 import Header from './Header';
+import HomePage from './HomePage';
+import NotFound from './NotFound';
 
 
 const sections = [
-  { title: 'Home', url: '#' },
+  { title: 'Home', url: '/#' },
   { title: 'Projects', url: '/projects' },
-  { title: 'Exploration', url: '#' },
-  { title: 'Analysis', url: '#' },
-  { title: 'Repository', url: '#' },
+  { title: 'Exploration', url: '/exploration' },
+  { title: 'Analysis', url: '/analysis' },
+  { title: 'Repository', url: '/repository' },
 ];
 
 class App extends React.Component {
@@ -30,7 +31,7 @@ class App extends React.Component {
               <div className='site-content'>
                 <Switch>
                   <Route exact path='/'>
-                    <Album />
+                    <HomePage />
                   </Route>
                   <Route path='/projects'>
                     <Album />
